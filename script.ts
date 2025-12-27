@@ -63,12 +63,18 @@ async function updateMovie(id: number) {
   console.log(updatedMovie);
 }
 
-function main() {
-  //   createMovie();
+async function deleteMovie(id: number) {
+  const deletedMovie = await prisma.movie.delete({ where: { id: id } });
+  console.log(deletedMovie);
+}
+
+async function main() {
+  //   await createMovie();
   //   createMultipleMovies();
   //   getAllMovies();
   //   getMovieById(1);
-  updateMovie(3);
+  //   updateMovie(3);
+  await deleteMovie(5);
 }
 
 main();
