@@ -7,5 +7,5 @@ CREATE TABLE "Movie" (
     "description" TEXT NOT NULL,
     "genre" TEXT NOT NULL,
     "releaseDate" DATETIME NOT NULL,
-    "ratint" REAL
+    "rating" REAL
 );
