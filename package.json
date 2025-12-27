@@ -1,26 +1,33 @@
 {
   "name": "learn-prisma",
   "version": "1.0.0",
-  "description": "",
+  "description": "in this repo I will revise all i learn Prisma ORM",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "npm": "use-pnpm-instead",
-    "pnpm": ">=9.0.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdallahKhaledAhmed/Learn-Prisma.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.9.0",
+  "bugs": {
+    "url": "https://github.com/AbdallahKhaledAhmed/Learn-Prisma/issues"
+  },
+  "homepage": "https://github.com/AbdallahKhaledAhmed/Learn-Prisma#readme",
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^25.0.3",
-    "@types/pg": "^8.16.0",
-    "prisma": "^7.2.0"
+    "prisma": "^7.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
   },
   "dependencies": {
-    "@prisma/client": "^7.2.0"
+    "@prisma/adapter-better-sqlite3": "^7.2.0",
+    "@prisma/client": "^7.2.0",
+    "dotenv": "^17.2.3"
   }
 }

@@ -19,5 +19,5 @@ model Movie {
   description String
   genre String
   releaseDate DateTime
-  ratint Float?                         // ? means optional
+  rating Float?                         // ? means optional
 }
