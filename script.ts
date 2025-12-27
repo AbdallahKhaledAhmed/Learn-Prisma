@@ -45,9 +45,21 @@ async function createMultipleMovies() {
   console.log(movies);
 }
 
+async function getAllMovies() {
+  const allMovies = await prisma.movie.findMany();
+  console.log(allMovies);
+}
+
+async function getMovieById(movieId: number) {
+  const movie = await prisma.movie.findUnique({ where: { id: movieId } });
+  console.log(movie);
+}
+
 function main() {
   //   createMovie();
-  createMultipleMovies();
+  //   createMultipleMovies();
+  //   getAllMovies();
+  getMovieById(1);
 }
 
 main();
