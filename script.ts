@@ -14,7 +14,7 @@ async function createMovie() {
   console.log(movie);
 }
 
-async function createMultibleMovies() {
+async function createMultipleMovies() {
   // Create a new user with a post
   const movies = await prisma.movie.createMany({
     data: [
@@ -47,7 +47,7 @@ async function createMultibleMovies() {
 
 function main() {
   //   createMovie();
-  createMultibleMovies();
+  createMultipleMovies();
 }
 
 main();
