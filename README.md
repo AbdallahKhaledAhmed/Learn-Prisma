@@ -1,3 +1,3 @@
 # Learn-Prisma
 
-in this repo I will revise all i learn Prisma ORM
+in this repo I will learn Prisma ORM
